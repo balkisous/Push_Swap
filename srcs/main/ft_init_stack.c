@@ -75,17 +75,8 @@ void	ft_free(t_stack **list_a, t_stack **list_b)
 	}
 }
 
-#include <sys/time.h>
-#include <sys/resource.h>
-
 int	main(int argc, char **argv)
 {
-	struct rlimit l;
-    
-	getrlimit(RLIMIT_AS, &l);
-    l.rlim_cur = 1000000;
-    setrlimit(RLIMIT_AS, &l);
-
 	t_env	s;
 
 	ft_init(&s);
