@@ -207,4 +207,8 @@ II) Deuxième partie de l'algo:
 		6
 		7
 	      
-	La stack A est enfin triée!! L'algorithme fonctionne et est optimisé à partir de plus de 5 arguments (il fonctionne aussi pour 500 arguments)
+	La stack A est enfin triée!! L'algorithme fonctionne et est optimisé
+		à partir de plus de 5 arguments (il fonctionne aussi pour 500 arguments).
+	
+	Je remercie @ttranche et @malaltini pour m'avoir aidée durant ce projet et du temps qui m'ont accordé pour
+		m'expliquer cette algorithme!!
