@@ -53,45 +53,45 @@ I) Première partie de l'algo:
             Le int_trie pour 6 il vaut 2
 	
  	b. Une fois que le int_trie a été calculer pour tous les nombres dans chaque maillon
-	le maillon qui a le int_trie le plus grand sera notre reference pour commencer notre alogorithme.
-	Ici c'est 0 et si on a pluisieurs int_trie superieur aux autres
-	mais egaux entre eux cela ne changera rien à l'algorithme. 
+		le maillon qui a le int_trie le plus grand sera notre reference pour commencer notre alogorithme.
+		Ici c'est 0 et si on a pluisieurs int_trie superieur aux autres
+		mais egaux entre eux cela ne changera rien à l'algorithme. 
 
  	c. Donc 0 est notre maillon de reference, pour 0 on a 0 < 1 < 6 < 7 qui sont deja trier,
-	du coup 3, 2 et 5 sont mal placé et ceux sont ces nombres là qu'il va falloir envoyé sur la stack B,
-	pour faire ca, on crée un bool dans chaque maillon 
-	pour qu'on "active" s'il faut l'envoyer sur la stack B.
+		du coup 3, 2 et 5 sont mal placé et ceux sont ces nombres là qu'il va falloir envoyé sur la stack B,
+		pour faire ca, on crée un bool dans chaque maillon 
+		pour qu'on "active" s'il faut l'envoyer sur la stack B.
         
   	d. Une fois la valleur du booléen changer dans les bons maillons,
-	on peut les envoyer sur la stack B, tout en optimisant les mouvements
-	pour obtenir un bon score lors de la correction ;). 
-	Pour optimiser les mouvements avant d'envoyer sur la stack B;
-	on va se servir du int index présent dans chaque maillon
-	(c'est un int à initier au debut du code, on fait un index simple quoi de 0 a n nombre).
-	Du coup on se place sur chaque maillon qu'on va envoyer et on calcule le nombre de mouvement à faire
-	pour l'envoyer sur la stack B. Si son index est supérieur a la moitié du all_number,
-	alors le nb_move sera negatif et correspondra aux rra, sinon il sera positif et correspondra au ra. 
-	On accrémente le nb_move jusqu'à que le nombre se situe au dessus de la stack A.
+		on peut les envoyer sur la stack B, tout en optimisant les mouvements
+		pour obtenir un bon score lors de la correction ;). 
+		Pour optimiser les mouvements avant d'envoyer sur la stack B;
+		on va se servir du int index présent dans chaque maillon
+		(c'est un int à initier au debut du code, on fait un index simple quoi de 0 a n nombre).
+		Du coup on se place sur chaque maillon qu'on va envoyer et on calcule le nombre de mouvement à faire
+		pour l'envoyer sur la stack B. Si son index est supérieur a la moitié du all_number,
+		alors le nb_move sera negatif et correspondra aux rra, sinon il sera positif et correspondra au ra. 
+		On accrémente le nb_move jusqu'à que le nombre se situe au dessus de la stack A.
         
   	e. Une fois le nb_move calculer pour chaque nombre qu'on va envoyer sur la stack B,
-	on choisit celui qui a le moins de mouvement (faire une fonction absolute pour comparer les nb_move entre eux,
-	sinon ca sera compliqué vu qu'il y en a qui sont négatif)
-        Pour notre exemple: on envoie 3, 2 et 5. 
-        Le nb_move de 3 est 0 il est deja au dessus de la stack
-        Le nb_move de 2 est 1
-        Le nb_move de 5 est 2
-        Si on aurait du envoyer le nombre 1 son nb_move aurait été -2
-		pour qu'il soit au dessus de la stack A.
-		(hypothése pour expliquer comment faire le nb_move en negatif)
+		on choisit celui qui a le moins de mouvement (faire une fonction absolute pour comparer les nb_move entre eux,
+		sinon ca sera compliqué vu qu'il y en a qui sont négatif)
+       		Pour notre exemple: on envoie 3, 2 et 5. 
+       		Le nb_move de 3 est 0 il est deja au dessus de la stack
+        	Le nb_move de 2 est 1
+        	Le nb_move de 5 est 2
+        	Si on aurait du envoyer le nombre 1 son nb_move aurait été -2
+			pour qu'il soit au dessus de la stack A.
+			(hypothése pour expliquer comment faire le nb_move en negatif)
         
    	f. Une fois qu'on a trouvé le nb_move le plus petit on fait les fait les actions
-	et on envoie sur B, du coup dans notre exemple ça equivaut à prendre le nombre 2
-	car son nb_move est à 0 et qu'il est le plus petit. Vu que son nb_move equivaut a 0;
-	On a pas besoin de faire de ra ou rra si son nb_move aurait été positif ou négatif
-	on aurait du accrementer ou decrementait nb_move respectivement tout en faisant l'action ra ou rra.
+		et on envoie sur B, du coup dans notre exemple ça equivaut à prendre le nombre 2
+		car son nb_move est à 0 et qu'il est le plus petit. Vu que son nb_move equivaut a 0;
+		On a pas besoin de faire de ra ou rra si son nb_move aurait été positif ou négatif
+		on aurait du accrementer ou decrementait nb_move respectivement tout en faisant l'action ra ou rra.
         
   	h. Dernière étape de la Première partie, on réitère les schemas d. e. et f.
-	Jusqu'à qu'il n'y est plus de nombre a envoyer sur la stack B.
+		Jusqu'à qu'il n'y est plus de nombre a envoyer sur la stack B.
         
 II) Deuxième partie de l'algo:
         
