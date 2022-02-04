@@ -6,7 +6,7 @@
 #and choose the one (of many) most appropriate solution for an optimized data sorting.
 
 
-# Comment faire Push swap:
+# Explication de l'algorithme de mon Push swap, fonctionne avec tous les nombre au dessus de 5, et optimisé, validé à 98%:
   Pour faire Push Swap:
     
   1) Savoir manier les listes chaînées (pour cette algo on va utiliser les liste chainées circulaires) et implémenté les actions (ra,  rb, rr, rra, rrb, pa, pb, sa, sb)
@@ -20,9 +20,10 @@
             	int				nbr;        // le nombre en lui même
             	int				int_trie;   // le nombre de nombre déjà trié
              	int				index;      // l'index dans ma liste chainée 
-	            int				is_sorted;  // savoir si le nombre fait partie de l'enchaînement de nombre déjà tiré
-              int       nb_move;    // le nombre de movement à faire pour une action
-              int       all_number; // le nombre de nombre au total
+	       	int				is_sorted;  // savoir si le nombre fait partie de l'enchaînement de nombre déjà tiré (le booléen)
+              	int       			nb_move;    // le nombre de movement à faire pour une action
+              	int				nb_calcule  // int calculator utile dans la stack B
+		int       			all_number; // le nombre de nombre au total, n nombre 
              	struct s_stack	*next;
           }				t_stack;
 		    
@@ -72,3 +73,4 @@ II) Deuxième partie de l'algo:
               0     2
               1     3
               6
+	b. Maintenant on va re-push sur la stack A dans le bonne ordre, du coup on va calculer le nombre de mouvement à faire pour envoyer dans la stack A pour chaque maillon de la stack B. Par conséquent on se resert des int déjà present dans notre structure, on a besoin de l'index, le nb_move sera le nombre total de mouvement pour push dans la stack A, le int_trie nous servira a caluculer le nombre de mouvement pour mettre les nombre au dessus de la stack B (on est obliger de mettre en haut de la stack B pour push dans la stack A) et le nb_calcule servira a calculer le nombre de mouvement pour mettre le bon nombre au dessus de la stack A pour que l'ordre reste croissant. 
