@@ -197,14 +197,14 @@ II) Deuxième partie de l'algo:
 	c'est plus optimisé de faire 3 rra que 5 ra.
 	
 	F. Finalement, on a :
-	      A     B
-              _     _
-              0     
-              1     
-              2
-	      3     
-              5
-	      6
-	      7
+		A     B
+		_     _
+		0     
+		1     
+		2
+		3     
+		5
+		6
+		7
 	      
 	La stack A est enfin triée!! L'algorithme fonctionne et est optimisé à partir de plus de 5 arguments (il fonctionne aussi pour 500 arguments)
