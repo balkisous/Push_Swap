@@ -102,8 +102,11 @@ II) Deuxième partie de l'algo:
               0     2
               1     3
               6
-   	B. Maintenant on va re-push sur la stack A dans le bonne ordre, du coup on va calculer le nombre de mouvement à faire pour envoyer dans la stack A
-	pour chaque maillon de la stack B. Par conséquent on se resert des int déjà present dans notre structure, on a besoin de l'index,
-	le nb_move sera le nombre total de mouvement pour push dans la stack A, le int_trie nous servira a caluculer le nombre de mouvement
-	pour mettre les nombre au dessus de la stack B (on est obliger de mettre en haut de la stack B pour push dans la stack A)
-	et le nb_calcule servira a calculer le nombre de mouvement pour mettre le bon nombre au dessus de la stack A pour que l'ordre reste croissant. 
+   	B. Maintenant on va re-push sur la stack A dans le bonne ordre, du coup on va calculer le nombre de mouvement
+		à faire pour envoyer dans la stack A pour chaque maillon de la stack B.
+		Par conséquent on se resert des int déjà present dans notre structure, on a besoin de l'index,
+		le nb_move sera le nombre total de mouvement pour push dans la stack A,
+		le int_trie nous servira a caluculer le nombre de mouvement pour mettre les nombres
+		au dessus de la stack B (on est obliger de mettre en haut de la stack B pour push dans la stack A)
+		et le nb_calcule servira a calculer le nombre de mouvement pour mettre
+		le bon nombre au dessus de la stack A pour que l'ordre reste croissant. 
