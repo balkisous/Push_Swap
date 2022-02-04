@@ -33,24 +33,24 @@
 I) Première partie de l'algo:
 				
  a. L-> Pour chaque nombre calculer le nombre de de nombre "déjà" trier
-                    Exemple la liste est : 3 2 5 7 0 1 6
-            Pour calculer le int_trie de chaque nombre il faut faire une boucle qui a pour condition arrêt tant qu'on ne retombe pas sur le nombre, ici 3.                           
-            Pour 3 son int_trie vaut 3 car on acrémente le int_trie a chaque fois qu'on parcours la liste et qu'on trouve un nombre supérieur à lui même
-                    Premierement on est sur 3, le prochain nombre est 2 -> 2 < 3 donc on accrémente pas le int_trie
-                    Aprés 2 il y a 5 et 5 > 3 donc le int_trie++ du maillon de 3,(une fois qu'on trouve un nombre plus grand que lui on se on
-                        prends celui ci comme nombre à différencier)
-                    Après on a 7 et 7 > 5 donc int_trie++;
-                    Apres il y a 0 et 0 < 7 donc on accrement pas int_trie, on continue jusqu'à retomber sur 3
-                Le int_trie pour 2 il vaut 3 
-                Le int_trie pour 5 il vaut 2 
-                Le int_trie pour 7 il vaut 1 car c'est le plus grand nombre il n'y a pas plus grand que lui
-                Le int trie pour 0 il vaut 4
-                Le int_trie pour 1 il vaut 3
-                Le int_trie pour 6 il vaut 2
+                    	Exemple la liste est : 3 2 5 7 0 1 6
+           	 Pour calculer le int_trie de chaque nombre il faut faire une boucle qui a pour condition arrêt tant qu'on ne retombe pas sur le nombre, ici 3.                           
+          	  Pour 3 son int_trie vaut 3 car on acrémente le int_trie a chaque fois qu'on parcours la liste et qu'on trouve un nombre supérieur à lui même
+                  	  Premierement on est sur 3, le prochain nombre est 2 -> 2 < 3 donc on accrémente pas le int_trie
+                  	  Aprés 2 il y a 5 et 5 > 3 donc le int_trie++ du maillon de 3,(une fois qu'on trouve un nombre plus grand que lui on se on
+                  	      prends celui ci comme nombre à différencier)
+                  	  Après on a 7 et 7 > 5 donc int_trie++;
+                   	 Apres il y a 0 et 0 < 7 donc on accrement pas int_trie, on continue jusqu'à retomber sur 3
+                	Le int_trie pour 2 il vaut 3 
+               		Le int_trie pour 5 il vaut 2 
+                	Le int_trie pour 7 il vaut 1 car c'est le plus grand nombre il n'y a pas plus grand que lui
+                	Le int trie pour 0 il vaut 4
+                	Le int_trie pour 1 il vaut 3
+                	Le int_trie pour 6 il vaut 2
 	
   b. Une fois que le int_trie a été calculer pour tous les nombres dans chaque maillon,
-	le maillon qui a le int_trie le plus grand sera notre reference pour commencer notre alogorithme.
-	Ici c'est 0 et si on a pluisieurs int_trie superieur aux autres mais egaux entre eux cela ne changera rien à l'algorithme. 
+		le maillon qui a le int_trie le plus grand sera notre reference pour commencer notre alogorithme.
+		Ici c'est 0 et si on a pluisieurs int_trie superieur aux autres mais egaux entre eux cela ne changera rien à l'algorithme. 
 
   c. Donc 0 est notre maillon de reference, pour 0 on a 0 < 1 < 6 < 7 qui sont deja trier du coup 3, 2 et 5 sont mal placé 
 	et ceux sont ces nombres là qu'il va falloir envoyé sur la stack B, pour faire ca, on crée un bool dans chaque maillon 
