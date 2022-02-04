@@ -158,34 +158,35 @@ II) Deuxième partie de l'algo:
 		Donc ici on va push le maillon 5 en premier car son nb_move est le plus petit,
 			on fait les actions nécessaire qu'on a déjà calculer
 			on va aussi faire une fonction qui va encore plus optimiser les actions quand on push sur la stack B,
-			cette fonction a pour but de savoir si on va faire des ra et rb ou rra et rrb comme ca on fait des rr ou rrr.
-			Vu que rr = ra + rb et rrr = rra + rrb (C'est la fonction ft_optimise_r dans le fichier ft_absolute.c)
+			cette fonction a pour but de savoir si on va faire des ra et rb ou rra
+			et rrb comme ca on fait des rr ou rrr. Vu que rr = ra + rb et rrr = rra + rrb
+			(C'est la fonction ft_optimise_r dans le fichier ft_absolute.c)
 			
 				-> Dans notre exemple on va faire rra (car int_trie vaut -1)
 					et pb, pour mettre 5 entre 1 et 6
 	
 	D. Dans notre exemple, on a :
-	      A     B
-              _     _
-              5     2
-              6     3
-              7
-	      0     
-              1
+		A     B
+		_     _
+		5     2
+		6     3
+		7
+		0     
+		1
 	      
 	      Donc maintenant on réitère les schémas B. et C. jusqu'à que la stack B est vide,
 	      	et que tout soit dans la stack A presque trié.
 	
 	E. Enfin, on a :
-	      A     B
-              _     _
-              3     
-              5     
-              6
-	      7     
-              0
-	      1
-	      2
+		A     B
+		_     _
+		3     
+		5     
+		6
+		7     
+		0
+		1
+		2
 	  
 	 La dérnière étape consiste à trouver le nombre le plus petit et le mettre au dessus de la stack A,
 	 	et que la liste soit bien dans l'odre croissant.
