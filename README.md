@@ -17,8 +17,15 @@
   3)  Faire l’algorithme qui se départage en deux grands parties:
   
     	Pour cette algorithme on stock chaque nombre dans un maillon, la stucture est:
+	A. L-> Pour chaque nombre calculer le nombre de de nombre "déjà" trier    
+		Exemple la liste est : 3 2 5 7 0 1 6
+        Pour calculer le int_trie de chaque nombre il faut faire une boucle qui a pour condition 
+	d'arrêt tant qu'on ne retombe pas sur le nombre, ici 3.                           
+        Pour 3 son int_trie vaut 3 car on acrémente le int_trie à chaque fois qu'on parcours la liste
+	et qu'on trouve un nombre supérieur à lui même.
+	Premierement
         	typedef struct s_stack
-        /*  {
+          {
             	int				nbr;        // le nombre en lui même
             	int				int_trie;   // le nombre de nombre déjà trié
              	int				index;      // l'index dans ma liste chainée 
@@ -27,7 +34,7 @@
               	int				nb_calcule  // int calculator utile dans la stack B
 		int       			all_number; // le nombre de nombre au total, n nombre, le nombre d'arguments total
              	struct s_stack	*next;
-         }				t_stack;*/
+         }				t_stack;
 
    4) L'algorithme:
    	Cette algorithme consiste à calculer tout les mouvements à faire pour chaque maillon,
