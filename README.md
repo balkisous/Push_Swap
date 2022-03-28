@@ -17,8 +17,8 @@
   3)  Faire l’algorithme qui se départage en deux grands parties:
   
     	Pour cette algorithme on stock chaque nombre dans un maillon, la stucture est:
-        typedef struct s_stack
-          {
+        	typedef struct s_stack
+        /*  {
             	int				nbr;        // le nombre en lui même
             	int				int_trie;   // le nombre de nombre déjà trié
              	int				index;      // l'index dans ma liste chainée 
@@ -27,7 +27,7 @@
               	int				nb_calcule  // int calculator utile dans la stack B
 		int       			all_number; // le nombre de nombre au total, n nombre, le nombre d'arguments total
              	struct s_stack	*next;
-         }				t_stack;
+         }				t_stack;*/
 
    4) L'algorithme:
    	Cette algorithme consiste à calculer tout les mouvements à faire pour chaque maillon,
