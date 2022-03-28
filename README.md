@@ -15,8 +15,8 @@
   2) Parsing —> ne pas laisser passer autres choses que les ints,”1 6 -9 bonjour”,  “0-23”, “0 --42”, les doublons, ...         
     
   3)  Faire l’algorithme qui se départage en deux grands parties:
-    Pour cette algorithme on stock chaque nombre dans un maillon, la stucture est:
-    
+  
+    	Pour cette algorithme on stock chaque nombre dans un maillon, la stucture est:
         typedef struct s_stack
           {
             	int				nbr;        // le nombre en lui même
@@ -27,8 +27,8 @@
               	int				nb_calcule  // int calculator utile dans la stack B
 		int       			all_number; // le nombre de nombre au total, n nombre, le nombre d'arguments total
              	struct s_stack	*next;
-          }				t_stack;
-		    
+         }				t_stack;
+
    4) L'algorithme:
    	Cette algorithme consiste à calculer tout les mouvements à faire pour chaque maillon,
 		une fois qu'on a touver le maillon ayant le nombre de mouvement le plus petit
