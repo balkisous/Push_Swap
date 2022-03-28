@@ -15,7 +15,8 @@
   2) Parsing —> ne pas laisser passer autres choses que les ints,”1 6 -9 bonjour”,  “0-23”, “0 --42”, les doublons, ...         
     
   3)  Faire l’algorithme qui se départage en deux grands parties:
-    Pour cette algorithme on stock chaque nombre dans un maillon, la stucture est: 
+    Pour cette algorithme on stock chaque nombre dans un maillon, la stucture est:
+    
         typedef struct s_stack
           {
             	int				nbr;        // le nombre en lui même
