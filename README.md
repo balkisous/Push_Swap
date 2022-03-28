@@ -25,7 +25,7 @@
 	       	int				is_sorted;  // savoir si le nombre fait partie de l'enchaînement de nombre déjà tiré (le booléen)
               	int       			nb_move;    // le nombre de movement à faire pour mettre le nombre au dessus de la stack
               	int				nb_calcule  // int calculator utile dans la stack B
-			int       			all_number; // le nombre de nombre au total, n nombre, le nombre d'arguments total
+			int       		all_number; // le nombre de nombre au total, n nombre, le nombre d'arguments total
              	struct s_stack	*next;
        		 }				t_stack;
 
