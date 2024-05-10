@@ -1,5 +1,6 @@
 # Push_swap
 #Summary:
+# Projet pour but de trier des données (Int) sur une pile à l’aide d’une pile vide supplémentaire disponible en soutien, avec un set d’instructions limité, en moins de coups possibles. 
 #This project will make you sort data on a stack,
 #with a limited set of instructions, using the lowest possible number of actions.
 #To succeed you’ll have to manipulate various types of algorithms
