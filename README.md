@@ -1,5 +1,4 @@
 # Push Swap
-# Summary:
 	Ce projet a pour but de trier des données (Int) sur une pile à l’aide d’une pile vide supplémentaire disponible en soutien, avec un set d’instructions limité, en moins de coups possibles. 
 
 # Pour tester le projet
