@@ -1,6 +1,6 @@
-# Push_swap
+# Push Swap
 # Summary:
-	Projet pour but de trier des données (Int) sur une pile à l’aide d’une pile vide supplémentaire disponible en soutien, avec un set d’instructions limité, en moins de coups possibles. 
+	Ce projet a pour but de trier des données (Int) sur une pile à l’aide d’une pile vide supplémentaire disponible en soutien, avec un set d’instructions limité, en moins de coups possibles. 
 
 # Pour tester le projet
 	-> ~ cd push_swap && make
