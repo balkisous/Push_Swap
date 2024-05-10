@@ -5,6 +5,15 @@
 #To succeed you’ll have to manipulate various types of algorithms
 #and choose the one (of many) most appropriate solution for an optimized data sorting.
 
+# Pour tester le projet
+  -> ~ cd push_swap && make
+  -> ~ ./push_swap "2 4 5 7"
+  Aucun mouvement n'est imprimer car la stack est déja trier 
+  -> ~ ./push_swap "4 5 6 2 6"
+  Error car double
+  -> ~ ./push_swap "2 5 6 1 78 43 67 32 57"
+  // les actions sont affiché
+
 
 # Explication de l'algorithme de mon Push swap, fonctionne avec tous les nombre au dessus de 5, et optimisé, validé à 98%:
   Pour faire Push Swap:
