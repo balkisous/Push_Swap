@@ -1,16 +1,60 @@
-# Push Swap
-	Ce projet a pour but de trier des données (Int) sur une pile à l’aide d’une pile vide supplémentaire disponible en soutien, avec un set d’instructions limité, en moins de coups possibles. 
+# Push_Swap 📚
+Sorted algorithm in a stack 
 
-# Pour tester le projet
-	-> ~ cd push_swap && make
-  	-> ~ ./push_swap "2 4 5 7"
-  	Aucun mouvement n'est imprimer car la stack est déja trier 
-  	-> ~ ./push_swap "4 5 6 2 6"
-  	Error car double
-  	-> ~ ./push_swap "2 5 6 1 78 43 67 32 57"
-  	// les actions sont affiché
+## Description 🔍
+
+This project aims to sort data (Int) on a stack using an additional video stack available as support, with a limited instruction set, in as few moves as possible.
+Its only print the instruction set, there are defined on the subject file.
+Coded in C, I appreciated playing with linked list and implemented the sorted algorithm. 🔗
+
+## Getting started 🏁
+
+### Dependencies 🛠️
+* Bash
+* Terminal
+* Python optional for the visual
+    
+
+### Installation 📦
+* Commande make for the Makefile 
+
+### Running the program 💻
+* How to run the program
+* First clone it
+  ```
+  git clone https://github.com/balkisous/push_swap.git  ```
+* Change directory and make to compile
+  ```
+  ~ cd push_swap && make
+  ~ ./push_swap 1 2 3 5 6 4 
+  ```
+If there a double Int, its an error
+Test with many Int as you want.
+Example of test :
+```
+	 ~ ./push_swap "2 4 5 7"
+  	No movement is printed because the stack is already sorted 
+  	~ ./push_swap "4 5 6 2 6"
+  	Error because double is present
+	~ ./push_swap "2 5 6 1 78 43 67 32 57"
+  	Actions are displayed
+```
+
+## Help 🛟
+* You can use an Visualizer to be more clear
+  L-> https://github.com/xbeheydt/push_swap_visualizer.git
+## Authors 👩‍💻
+Names of contributors :
+@balkisous
+Some help of @ttranche for the theoretical explanation of the algorithm
+## Version history ✅
+* Made at 42Paris 
+
+## Subject 📝
+You will find the subject in the repo
 
 
+## Tuto for the algorithm (in French)
 # Explication de l'algorithme de mon Push swap, fonctionne avec tous les nombre au dessus de 5, et optimisé, validé à 98%:
   Pour faire Push Swap:
     
