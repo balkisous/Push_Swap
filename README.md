@@ -12,7 +12,8 @@ Coded in C, I appreciated playing with linked list and implemented the sorted al
 ### Dependencies 🛠️
 * Bash
 * Terminal
-* Python optional for the visual
+* Python optional for the visualizer
+* Apt-get for the visualizer
     
 
 ### Installation 📦
@@ -41,8 +42,8 @@ Example of test :
 ```
 
 ## Help 🛟
-* You can use an Visualizer to be more clear
-  L-> https://github.com/xbeheydt/push_swap_visualizer.git
+* You can use a Visualizer to be more clear to test
+  L-> https://github.com/o-reo/push_swap_visualizer.git
 ## Authors 👩‍💻
 Names of contributors :
 @balkisous
