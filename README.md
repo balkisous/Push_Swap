@@ -1,5 +1,5 @@
 # Push_Swap 📚
-Sorted algorithm in a stack 
+Sorted algorithm in a stack.
 
 ## Description 🔍
 
