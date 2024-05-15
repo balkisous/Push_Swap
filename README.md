@@ -46,15 +46,17 @@ Example of test :
   L-> https://github.com/o-reo/push_swap_visualizer.git
 ## Authors 👩‍💻
 Names of contributors :
-@balkisous
-Some help of @ttranche for the theoretical explanation of the algorithm
+ * @balkisous
+ * Some help of @ttranche for the theoretical explanation of the algorithm
 ## Version history ✅
 * Made at 42Paris 
 
 ## Subject 📝
-You will find the subject in the repo
+You will find the subject in the repository.
 
 
+
+## -------------------------------------------------------------------------------------------------------
 ## Tuto for the algorithm (in French)
 # Explication de l'algorithme de mon Push swap, fonctionne avec tous les nombre au dessus de 5, et optimisé, validé à 98%:
   Pour faire Push Swap:
