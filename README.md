@@ -3,7 +3,7 @@ Sorted algorithm in a stack.
 
 ## Description 🔍
 
-This project aims to sort data (Int) on a stack using an additional video stack available as support, with a limited instruction set, in as few moves as possible.
+This project aims to sort data (Int) on a stack using an additional empty stack available as support, with a limited instruction set, in as few moves as possible.
 It has only printed the instruction set, they are defined on the subject file.
 Coded in C, I appreciated playing with linked list and implemented the sorted algorithm. 🔗
 
