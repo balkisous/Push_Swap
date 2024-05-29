@@ -41,6 +41,9 @@ Example of test :
   	Actions are displayed
 ```
 
+## Excepted view (with the visualizer)
+
+
 ## Help 🛟
 * You can use a Visualizer to be more clear to test
   L-> https://github.com/o-reo/push_swap_visualizer.git
