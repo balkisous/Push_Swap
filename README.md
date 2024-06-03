@@ -43,6 +43,7 @@ Example of test :
 
 ## Excepted view (with the visualizer)
 
+[Push Swap (1).webm](https://github.com/balkisous/Push_Swap/assets/76943138/5ffaea2c-66b3-40a6-93d3-36f3e41b37a3)
 
 ## Help 🛟
 * You can use a Visualizer to be more clear to test
